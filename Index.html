@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title> 
+<style type="text/css" media="all">
+  *{
+    margin:0;
+    padding:0;
+  }
+  body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+  }
+  .box{
+    width:350px;
+    border-radius:20px;
+    box-shadow:0px 0px 3px;
+    padding-bottom:8px;
+  }
+  header{
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:9px;
+    background:rgb(0,51,0);
+    border-radius:20px 20px 0px 0px;
+  }
+  h5{
+    font-size:25px;
+    font-weight:600;
+    color:rgba(255,204,0);
+  }
+  img{
+    width:40px;
+    height:40px;
+  }
+  .text{
+    max-width:86%;
+    max-height:120px;
+    height:auto;
+    border:1px solid lightgray;
+    margin-top:17px;
+    margin-left:12px;
+    border-radius:10px;
+    box-shadow:0px 0px 3px lightgray;
+    overflow-y:auto;
+    padding:8px;
+    display:none;
+  }
+  .typing{
+    width:86%;
+    height:120px;
+    border:1px solid lightgray;
+    margin:17px;
+    border-radius:10px;
+    box-shadow:0px 0px 3px lightgray;
+    outline:none;
+    padding:5px;
+  }
+  .wpm{
+    width:130px;
+    height:100px;
+    border:1px solid lightgray;
+    margin:17px;
+    border-radius:10px;
+    box-shadow:0px 0px 3px lightgray;
+  }
+    .error{
+    width:130px;
+    height:100px;
+    border:1px solid lightgray;
+    margin:17px;
+    border-radius:10px;
+    box-shadow:0px 0px 3px lightgray;
+  }
+  .accuracy{
+    width:130px;
+    height:100px;
+    border:1px solid lightgray;
+    margin:17px;
+    border-radius:10px;
+    box-shadow:0px 0px 3px lightgray;
+  }
+  .flex{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    height:260px;
+  }
+  h3{
+    font-size:17px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:green;
+    border-radius:10px 10px 0px 0px;
+    color:white;
+    height:30px;
+  }
+  .error h3{
+    background:red;
+  }
+  .accuracy h3{
+    background:#1e99ff;
+  }
+  .score{
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:29px;
+  }
+  .mistakes{
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:29px;
+  }
+  .accuracyRate{
+        height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:29px;
+  }
+  p{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:10px;
+    background:rgba(70,70,70,0.2);
+    height:20px;
+    border-radius:0px 0px 10px 10px;
+  }
+  button{
+    width:80px;
+    height:40px;
+    background:#1e90ff;
+    color:white;
+    border-radius:8px;
+    border:none;
+    margin-left:140px;
+    font-size:18px;
+    margin-top:15px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="box">
+  <header>
+    <img src="time.png">
+    <h5>Time left : <span>00</span></h5>
+  </header>
+  <div class="text"></div>
+  <textarea class="typing" placeholder=""></textarea>
+ <div class="flex"> 
+  <div class="wpm">
+    <h3>WPM</h3>
+    <div class="score">10</div>
+    <p>Word Per minute</p>
+  </div>
+  <div class="error">
+    <h3>Mistake</h3>
+    <div class="mistakes">4</div>
+    <p>Error Mode</p>
+  </div>
+  <div class="accuracy">
+    <h3>Accuracy</h3>
+   <div class="accuracyRate">7%</div>
+   <p>Type accuracy</p>
+  </div>
+  </div>
+  <button>Restart</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+      </html>
